@@ -11,7 +11,7 @@ class Mend < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/toaweme/mend/releases/download/v0.1.0/mend_0.1.0_darwin_x64.tar.gz"
-      sha256 "a851b945e84772f539dfab25c59cfa19ffbeca9502df18427d2ea01ea00edb09"
+      sha256 "4fea07ccf33c5dcccc7f25fd1b8af8919f9aa3ba689fdc4de35ffcc2988452fa"
 
       define_method(:install) do
         bin.install "mend"
@@ -19,7 +19,7 @@ class Mend < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/toaweme/mend/releases/download/v0.1.0/mend_0.1.0_darwin_arm64.tar.gz"
-      sha256 "5bdf4eb70ae4ed28e4fe957be3a54a3cd1349578a8e064d2fd810f0b78a6a9fa"
+      sha256 "89756fc43ef40adc63b7df7d823ef2a1a45ac68ac5ce496f6f65bc35c513b353"
 
       define_method(:install) do
         bin.install "mend"
@@ -30,14 +30,14 @@ class Mend < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/toaweme/mend/releases/download/v0.1.0/mend_0.1.0_linux_x64.tar.gz"
-      sha256 "02a0c34278ffb7efa12173aa8e55e01375d9fa7bc3dbd7b11a3ef2581af0b50f"
+      sha256 "a37126f5568681e5ae794682513080fc61d8a75848db63940121e7daafecd0da"
       define_method(:install) do
         bin.install "mend"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/toaweme/mend/releases/download/v0.1.0/mend_0.1.0_linux_arm64.tar.gz"
-      sha256 "a1b62684322e3a32416b82691cf97c25ed0d7d3441040f6c04dfe559e4503c1c"
+      sha256 "ccfcd55e6d21b61def1351d14ef10c5c2bdbab3db1183e7519336184d32a864b"
       define_method(:install) do
         bin.install "mend"
       end
