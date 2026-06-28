@@ -11,7 +11,7 @@ class Care < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/toaweme/care/releases/download/v0.2.0/care_0.2.0_darwin_x64.tar.gz"
-      sha256 "eb4b068f03d0282779edc8973c19f0d3c3ce1b47c83601e154e4c38ea064b42f"
+      sha256 "aa07bedcaabfd52d34a48d423d09036df203e00631538bf37d6780c2819470ed"
 
       define_method(:install) do
         bin.install "care"
@@ -19,7 +19,7 @@ class Care < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/toaweme/care/releases/download/v0.2.0/care_0.2.0_darwin_arm64.tar.gz"
-      sha256 "972c4daf8ed3e96990e557432937f73cd058b7b85b1d455cf828f6270a61b7e6"
+      sha256 "ace921a284550a0aaff7c363e7a6531136827108b366d1b10f3b11c19ac1afef"
 
       define_method(:install) do
         bin.install "care"
@@ -30,14 +30,14 @@ class Care < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/toaweme/care/releases/download/v0.2.0/care_0.2.0_linux_x64.tar.gz"
-      sha256 "52a09db1299f515d87b0488ea7112c78919220fd70a4438d50f54f544d672b73"
+      sha256 "065e3b9a8fdffa20a8121712e1b69f36e7a12ebf18d8b12ca04c2a819092f8f4"
       define_method(:install) do
         bin.install "care"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/toaweme/care/releases/download/v0.2.0/care_0.2.0_linux_arm64.tar.gz"
-      sha256 "b45c6159554c9169aad99222ea626366a4a809c0482a15a4f11c3c89b4df89d9"
+      sha256 "4abab1e5a8b7c55525e0025f30de6bdf6b37644a313c6ecf27ac027bc2d0cc5c"
       define_method(:install) do
         bin.install "care"
       end
