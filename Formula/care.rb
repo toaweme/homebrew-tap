@@ -5,21 +5,21 @@
 class Care < Formula
   desc "Repository health and quality checker"
   homepage "https://github.com/toaweme/care"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/toaweme/care/releases/download/v0.3.0/care_0.3.0_darwin_x64.tar.gz"
-      sha256 "1fca15bea91a86813bac4c40d1a22ae8c5fbef85dade90812d76be847a100c85"
+      url "https://github.com/toaweme/care/releases/download/v0.3.1/care_0.3.1_darwin_x64.tar.gz"
+      sha256 "e60c194d8af68e3ff67099f77db4d3570ba7ffb72f2cd04ee7cf319fe55806fd"
 
       define_method(:install) do
         bin.install "care"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/toaweme/care/releases/download/v0.3.0/care_0.3.0_darwin_arm64.tar.gz"
-      sha256 "443a39c3ce065c5913611d7e55d3ffea2453e5b65ab2a92d5c68baa052c34ce4"
+      url "https://github.com/toaweme/care/releases/download/v0.3.1/care_0.3.1_darwin_arm64.tar.gz"
+      sha256 "da2319253c437be6d0f7cee8ab668a5baa5894ce47139b9fbebf587436c61762"
 
       define_method(:install) do
         bin.install "care"
@@ -29,15 +29,15 @@ class Care < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/toaweme/care/releases/download/v0.3.0/care_0.3.0_linux_x64.tar.gz"
-      sha256 "700a57a776238f30ec16893734f09ee0879cec07ce766b3b2c2c025ec6b7cbf0"
+      url "https://github.com/toaweme/care/releases/download/v0.3.1/care_0.3.1_linux_x64.tar.gz"
+      sha256 "ef5394b9611f7abb0f1ebd51aaf50c5bdd932a11356275fe9b623df04db2210c"
       define_method(:install) do
         bin.install "care"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/toaweme/care/releases/download/v0.3.0/care_0.3.0_linux_arm64.tar.gz"
-      sha256 "943616fd55f735078eedb1b360a7a16d047e928bf07be238dfe5f8501df38442"
+      url "https://github.com/toaweme/care/releases/download/v0.3.1/care_0.3.1_linux_arm64.tar.gz"
+      sha256 "94d6359098f55417917639e5c42308852224d79c2c47a41b7e1587295c640e8f"
       define_method(:install) do
         bin.install "care"
       end
