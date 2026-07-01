@@ -11,7 +11,7 @@ class Blink < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/toaweme/blink/releases/download/v0.1.0/blink_0.1.0_darwin_x64.tar.gz"
-      sha256 "6efe4726956237d15ff199ceee44a2b6c12cfee0a419cf2a093dbdb9849b4642"
+      sha256 "999097feb6e09b4f6ca31c13402b4560d588e1a44b2c3f29fa1975895e135c44"
 
       define_method(:install) do
         bin.install "blink"
@@ -19,7 +19,7 @@ class Blink < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/toaweme/blink/releases/download/v0.1.0/blink_0.1.0_darwin_arm64.tar.gz"
-      sha256 "b5a38ac6b279f00dabea88a72c2f9a5138f7c46bbca167eb6ba298b2bb99dc1b"
+      sha256 "9c4ed0b15559a82f1142cbc04b8e3a95238d9f5b37ea7fd8b38623ea222f11fc"
 
       define_method(:install) do
         bin.install "blink"
@@ -30,14 +30,14 @@ class Blink < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/toaweme/blink/releases/download/v0.1.0/blink_0.1.0_linux_x64.tar.gz"
-      sha256 "7d2c0b2b768ba7303c5d1933bef4d5eb9060873ef7c0240ebc8e3d3e6b71e21c"
+      sha256 "cef7f182ee735355850126c534d87bee76dacf359ac2b8eab5e847bc058430d7"
       define_method(:install) do
         bin.install "blink"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/toaweme/blink/releases/download/v0.1.0/blink_0.1.0_linux_arm64.tar.gz"
-      sha256 "e1eab9f37f4bfea820be82d95a1f4f1fd349a4928487e3c37e443a909e391ef7"
+      sha256 "f7882238086df95273d5d36901cb6648470b110f2738b8e75ab7cf9a8c115834"
       define_method(:install) do
         bin.install "blink"
       end
