@@ -5,21 +5,21 @@
 class Blink < Formula
   desc "Live-reload supervisor for local dev"
   homepage "https://github.com/toaweme/blink"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/toaweme/blink/releases/download/v0.1.0/blink_0.1.0_darwin_x64.tar.gz"
-      sha256 "999097feb6e09b4f6ca31c13402b4560d588e1a44b2c3f29fa1975895e135c44"
+      url "https://github.com/toaweme/blink/releases/download/v0.1.1/blink_0.1.1_darwin_x64.tar.gz"
+      sha256 "ce547ed65d4300f789430418c5a51172a82dd9fc2477a6288ec52d38765c5d30"
 
       define_method(:install) do
         bin.install "blink"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/toaweme/blink/releases/download/v0.1.0/blink_0.1.0_darwin_arm64.tar.gz"
-      sha256 "9c4ed0b15559a82f1142cbc04b8e3a95238d9f5b37ea7fd8b38623ea222f11fc"
+      url "https://github.com/toaweme/blink/releases/download/v0.1.1/blink_0.1.1_darwin_arm64.tar.gz"
+      sha256 "f7931cbc3e93f4d6a1cf31071e4024b427f97aa37ada9e5767034c86221acb9b"
 
       define_method(:install) do
         bin.install "blink"
@@ -29,15 +29,15 @@ class Blink < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/toaweme/blink/releases/download/v0.1.0/blink_0.1.0_linux_x64.tar.gz"
-      sha256 "cef7f182ee735355850126c534d87bee76dacf359ac2b8eab5e847bc058430d7"
+      url "https://github.com/toaweme/blink/releases/download/v0.1.1/blink_0.1.1_linux_x64.tar.gz"
+      sha256 "217ceb72d021279c31caa5b0a521c6b075027bac80360630cf9f307b67c27c4a"
       define_method(:install) do
         bin.install "blink"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/toaweme/blink/releases/download/v0.1.0/blink_0.1.0_linux_arm64.tar.gz"
-      sha256 "f7882238086df95273d5d36901cb6648470b110f2738b8e75ab7cf9a8c115834"
+      url "https://github.com/toaweme/blink/releases/download/v0.1.1/blink_0.1.1_linux_arm64.tar.gz"
+      sha256 "07ba95495750cf45afe43120e19d911babbf76db48f5be9c34e08ddcf0794350"
       define_method(:install) do
         bin.install "blink"
       end
