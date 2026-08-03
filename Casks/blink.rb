@@ -4,22 +4,22 @@ cask "blink" do
 
   on_macos do
     on_intel do
-      sha256 "83ac00886bec7e6c999acc07737d768c8cfc6ec65bd412d74c3003dbd4002046"
+      sha256 "db3f27c4e73ad8bda1a24c9a13007114fb0903923d77faa73e511f6ffe4600e8"
       url "https://github.com/toaweme/blink/releases/download/v#{version}/blink_#{version}_darwin_x64.tar.gz"
     end
     on_arm do
-      sha256 "acd450cda2980bd88c469096fc08edd5cd7355475ab451324ce48448eea38536"
+      sha256 "5674e2101be91adced930194364b514735c3a63f88b1684587fdc565467d500c"
       url "https://github.com/toaweme/blink/releases/download/v#{version}/blink_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "700c4bfd60527c9d5f479b2b7849b9162298e5a060097d565b12fb344de266ac"
+      sha256 "e50012b9e56798250195297b7b13c8e0b170465eb8ddba1ecbde8392d597d4d3"
       url "https://github.com/toaweme/blink/releases/download/v#{version}/blink_#{version}_linux_x64.tar.gz"
     end
     on_arm do
-      sha256 "08600ff84ccca16740a8fd3229dd306e2f050804a8d462d3d64007084903fb03"
+      sha256 "ad4eb0e5a30c585066ff928240de8f2ab07ca3d085ccf77d3954b0ec5b0f9767"
       url "https://github.com/toaweme/blink/releases/download/v#{version}/blink_#{version}_linux_arm64.tar.gz"
     end
   end
