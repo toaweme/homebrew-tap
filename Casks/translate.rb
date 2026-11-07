@@ -4,21 +4,21 @@ cask "translate" do
 
   on_macos do
     on_arm do
-      sha256 "1f3e70ca64b15bd086b322291168249ee1b336ee5531d7be1a0b3be4db5dab05"
+      sha256 "7d68c17b3ccb3a1bf1841876779bc7d00157bf5a00886c9fe80083b5bcdd1dfb"
       url "https://github.com/awee-ai/translate-cli/releases/download/v#{version}/translate_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "e25f8d0c16c97ea2c74187883899d5ea1eb61a290c614c337932abecbd1fce42"
+      sha256 "7186ca1c9271fe617fe3a27b98a77835a250b037bce896a341bcab88fbcc74d1"
       url "https://github.com/awee-ai/translate-cli/releases/download/v#{version}/translate_#{version}_darwin_x64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "55f11b4e2178e5e6734eccbddbe48b88fdbb47ff8f3afa22e93e732c571eab71"
+      sha256 "a036bc7b5c4c1eff35516ba51862d4b1321dc18cc84e046ffa6dd497007f73c4"
       url "https://github.com/awee-ai/translate-cli/releases/download/v#{version}/translate_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "0c85b606ee2bbc7addb4d39c3d94ba6760dd0aa7864feb1c2a2bf1d3f962954b"
+      sha256 "04d25d6e5e408fe2101eb30e175603e5a4f6e5bf3cd1403e972270d79e340c2e"
       url "https://github.com/awee-ai/translate-cli/releases/download/v#{version}/translate_#{version}_linux_x64.tar.gz"
     end
   end
